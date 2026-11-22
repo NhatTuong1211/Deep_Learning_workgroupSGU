@@ -1,1 +1,7 @@
 .DS_Store
+Oxford-IIIT-Pet-Segmentation/data/raw/*
+!Oxford-IIIT-Pet-Segmentation/data/raw/.gitkeep
+**/__pycache__/
+**/*.pyc
+**/wandb/
+**/*.zip
