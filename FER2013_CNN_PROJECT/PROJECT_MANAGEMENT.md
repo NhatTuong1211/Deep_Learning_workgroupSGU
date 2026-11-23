@@ -1,38 +1,38 @@
-\## 1. Thông tin đề tài
+## 1. Thông tin đề tài
 
 
 
-\*\*Tên đề tài:\*\* Xây dựng hệ thống nhận diện cảm xúc khuôn mặt bằng mạng CNN trên bộ dữ liệu FER2013.
+**Tên đề tài:** Xây dựng hệ thống nhận diện cảm xúc khuôn mặt bằng mạng CNN trên bộ dữ liệu FER2013.
 
 
 
-\*\*Mục đích:\*\* Quản lý mã nguồn, kết quả thực nghiệm, nhật ký làm việc, tài liệu báo cáo và sản phẩm trình bày của nhóm trong suốt quá trình thực hiện đồ án.
+**Mục đích:** Quản lý mã nguồn, kết quả thực nghiệm, nhật ký làm việc, tài liệu báo cáo và sản phẩm trình bày của nhóm trong suốt quá trình thực hiện đồ án.
 
 
 
-\## 2. Hệ thống quản lý tài liệu
+## 2. Hệ thống quản lý tài liệu
 
 
 
-\### 2.1. Quản lý mã nguồn
+### 2.1. Quản lý mã nguồn
 
-\- GitHub - Link: https://github.com/NhatTuong1211/Deep\_Learning\_workgroupSGU/tree/main/FER2013\_CNN\_PROJECT
-
-
-
-\### 2.2. Quản lý thực nghiệm
-
-\- \*\*Nhật ký thực nghiệm:\*\* Google Sheets - Link: https://docs.google.com/spreadsheets/d/1oMFqfr2OszDtxhzmBPEUqCC0mEhL77dpJ2beOcgS-sY/edit?usp=sharing
+- GitHub - Link: https://github.com/NhatTuong1211/Deep\_Learning\_workgroupSGU/tree/main/FER2013\_CNN\_PROJECT
 
 
 
-\### 2.3. Quản lý hình ảnh và kết quả trực quan
+### 2.2. Quản lý thực nghiệm
 
-\- Canva - https://canva.link/0fawkuhadsgutvn
+- **Nhật ký thực nghiệm:** Google Sheets - Link: https://docs.google.com/spreadsheets/d/1oMFqfr2OszDtxhzmBPEUqCC0mEhL77dpJ2beOcgS-sY/edit?usp=sharing
 
 
 
-\### 2.4. Quản lý kế hoạch và tài liệu
+### 2.3. Quản lý hình ảnh và kết quả trực quan
 
-\- Google Docs - Link: https://docs.google.com/document/d/1K0CuS9ZpX7kl\_3VmqrapCTJGWjtONypb6xQqaNTKkx8/edit?usp=sharing
+- Canva - https://canva.link/0fawkuhadsgutvn
+
+
+
+### 2.4. Quản lý kế hoạch và tài liệu
+
+- Google Docs - Link: https://docs.google.com/document/d/1K0CuS9ZpX7kl\_3VmqrapCTJGWjtONypb6xQqaNTKkx8/edit?usp=sharing
 
