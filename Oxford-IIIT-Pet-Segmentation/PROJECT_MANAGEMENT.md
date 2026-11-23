@@ -16,7 +16,7 @@
 
 ### 2.1. Quản lý mã nguồn
 
-- GitHub - Link: https://github.com/NhatTuong1211/Deep\_Learning\_workgroupSGU
+- GitHub - Link: https://github.com/NhatTuong1211/Deep_Learning_workgroupSGU/tree/main/Oxford-IIIT-Pet-Segmentation
 
 
 
