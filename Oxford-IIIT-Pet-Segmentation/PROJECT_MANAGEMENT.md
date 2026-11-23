@@ -22,9 +22,9 @@
 
 ### 2.2. Quản lý thực nghiệm
 
-- **Kết quả thực nghiệm:** Google Drive - Link: https://drive.google.com/drive/folders/1BNvwlYBzF61\_NRYWKLWBMvnbeCRNpOlf?usp=drive\_link
+- **Kết quả thực nghiệm:** Google Drive - Link: https://drive.google.com/drive/folders/1BNvwlYBzF61_NRYWKLWBMvnbeCRNpOlf?usp=drive_link
 
-- **Nhật ký thực nghiệm:** Google Sheets - Link: https://docs.google.com/spreadsheets/d/1aEhy0xoDmTnUZY1Ss6zrE10yq1-fMMPGU44lc0\_PdAM/edit?gid=0#gid=0
+- **Nhật ký thực nghiệm:** Google Sheets - Link: https://docs.google.com/spreadsheets/d/1aEhy0xoDmTnUZY1Ss6zrE10yq1-fMMPGU44lc0_PdAM/edit?usp=sharing
 
 
 
