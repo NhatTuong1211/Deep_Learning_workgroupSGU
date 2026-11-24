@@ -16,7 +16,7 @@
 
 ### 2.1. Quản lý mã nguồn
 
-- GitHub - Link: https://github.com/NhatTuong1211/Deep\_Learning\_workgroupSGU/tree/main/FER2013\_CNN\_PROJECT
+- GitHub - Link: https://github.com/NhatTuong1211/Deep_Learning_workgroupSGU/tree/main/FER2013_CNN_PROJECT
 
 
 
@@ -28,11 +28,11 @@
 
 ### 2.3. Quản lý hình ảnh và kết quả trực quan
 
-- Canva - https://canva.link/0fawkuhadsgutvn
+- Canva - Link: https://canva.link/0fawkuhadsgutvn
 
 
 
 ### 2.4. Quản lý kế hoạch và tài liệu
 
-- Google Docs - Link: https://docs.google.com/document/d/1K0CuS9ZpX7kl\_3VmqrapCTJGWjtONypb6xQqaNTKkx8/edit?usp=sharing
+- Google Docs - Link: https://docs.google.com/document/d/1K0CuS9ZpX7kl_3VmqrapCTJGWjtONypb6xQqaNTKkx8/edit?usp=sharing
 
