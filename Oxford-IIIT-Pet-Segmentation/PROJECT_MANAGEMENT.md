@@ -30,7 +30,7 @@
 
 ### 2.3. Quản lý hình ảnh và kết quả trực quan
 
-- Canva - Link: https://canva.link/bbjv71mund2brws
+- Google Slide - Link: https://docs.google.com/presentation/d/1jEQNZ4BxNRPBXPxMhrwA4qb_7a5kkkJCGOB9iEjtkpA/edit?usp=sharing
 
 
 
