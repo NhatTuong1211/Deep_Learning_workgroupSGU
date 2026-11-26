@@ -1,5 +1,4 @@
 """Các khối building blocks tái sử dụng cho mạng CNN FER2013."""
-
 from typing import Optional
 import torch
 import torch.nn as nn

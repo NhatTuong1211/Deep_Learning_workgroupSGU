@@ -1,0 +1,10 @@
+model_name: FER2013CNN
+model_version: v1.0
+total_params: 2356391
+trainable_params: 2356391
+non_trainable_params: 0
+feature_extractor_params: 1172640
+classifier_params: 1183751
+flatten_dim: 2304
+last_conv_layer: features.block4.conv_layers.conv2
+last_conv_weight_shape: [256, 256, 3, 3]
