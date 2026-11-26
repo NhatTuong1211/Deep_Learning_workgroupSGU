@@ -6,7 +6,7 @@
 
 
 
-**Mục đích:** Quản lý mã nguồn, kết quả thực nghiệm, nhật ký làm việc, tài liệu báo cáo và sản phẩm trình bày của nhóm trong suốt quá trình thực hiện đồ án.
+**Mục đích:** Quản lý mã nguồn, tài liệu báo cáo và sản phẩm trình bày của nhóm trong suốt quá trình thực hiện đồ án.
 
 
 
