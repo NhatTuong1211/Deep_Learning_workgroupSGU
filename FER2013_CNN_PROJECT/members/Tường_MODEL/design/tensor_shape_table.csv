@@ -1,0 +1,38 @@
+﻿STT,Layer Name,Layer Type,Input Shape,Output Shape,Parameters,Trainable Parameters,Layer Details
+1,features.block1.conv_layers.conv1,Conv2d,"[B, 1, 48, 48]","[B, 32, 48, 48]",288,288,"in=1, out=32, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+2,features.block1.conv_layers.bn1,BatchNorm2d,"[B, 32, 48, 48]","[B, 32, 48, 48]",64,64,num_features=32
+3,features.block1.conv_layers.act1,ReLU,"[B, 32, 48, 48]","[B, 32, 48, 48]",0,0,-
+4,features.block1.conv_layers.conv2,Conv2d,"[B, 32, 48, 48]","[B, 32, 48, 48]",9216,9216,"in=32, out=32, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+5,features.block1.conv_layers.bn2,BatchNorm2d,"[B, 32, 48, 48]","[B, 32, 48, 48]",64,64,num_features=32
+6,features.block1.conv_layers.act2,ReLU,"[B, 32, 48, 48]","[B, 32, 48, 48]",0,0,-
+7,features.block1.pool,MaxPool2d,"[B, 32, 48, 48]","[B, 32, 24, 24]",0,0,"k=2, s=2"
+8,features.block1.dropout,Dropout2d,"[B, 32, 24, 24]","[B, 32, 24, 24]",0,0,p=0.25
+9,features.block2.conv_layers.conv1,Conv2d,"[B, 32, 24, 24]","[B, 64, 24, 24]",18432,18432,"in=32, out=64, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+10,features.block2.conv_layers.bn1,BatchNorm2d,"[B, 64, 24, 24]","[B, 64, 24, 24]",128,128,num_features=64
+11,features.block2.conv_layers.act1,ReLU,"[B, 64, 24, 24]","[B, 64, 24, 24]",0,0,-
+12,features.block2.conv_layers.conv2,Conv2d,"[B, 64, 24, 24]","[B, 64, 24, 24]",36864,36864,"in=64, out=64, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+13,features.block2.conv_layers.bn2,BatchNorm2d,"[B, 64, 24, 24]","[B, 64, 24, 24]",128,128,num_features=64
+14,features.block2.conv_layers.act2,ReLU,"[B, 64, 24, 24]","[B, 64, 24, 24]",0,0,-
+15,features.block2.pool,MaxPool2d,"[B, 64, 24, 24]","[B, 64, 12, 12]",0,0,"k=2, s=2"
+16,features.block2.dropout,Dropout2d,"[B, 64, 12, 12]","[B, 64, 12, 12]",0,0,p=0.25
+17,features.block3.conv_layers.conv1,Conv2d,"[B, 64, 12, 12]","[B, 128, 12, 12]",73728,73728,"in=64, out=128, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+18,features.block3.conv_layers.bn1,BatchNorm2d,"[B, 128, 12, 12]","[B, 128, 12, 12]",256,256,num_features=128
+19,features.block3.conv_layers.act1,ReLU,"[B, 128, 12, 12]","[B, 128, 12, 12]",0,0,-
+20,features.block3.conv_layers.conv2,Conv2d,"[B, 128, 12, 12]","[B, 128, 12, 12]",147456,147456,"in=128, out=128, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+21,features.block3.conv_layers.bn2,BatchNorm2d,"[B, 128, 12, 12]","[B, 128, 12, 12]",256,256,num_features=128
+22,features.block3.conv_layers.act2,ReLU,"[B, 128, 12, 12]","[B, 128, 12, 12]",0,0,-
+23,features.block3.pool,MaxPool2d,"[B, 128, 12, 12]","[B, 128, 6, 6]",0,0,"k=2, s=2"
+24,features.block3.dropout,Dropout2d,"[B, 128, 6, 6]","[B, 128, 6, 6]",0,0,p=0.25
+25,features.block4.conv_layers.conv1,Conv2d,"[B, 128, 6, 6]","[B, 256, 6, 6]",294912,294912,"in=128, out=256, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+26,features.block4.conv_layers.bn1,BatchNorm2d,"[B, 256, 6, 6]","[B, 256, 6, 6]",512,512,num_features=256
+27,features.block4.conv_layers.act1,ReLU,"[B, 256, 6, 6]","[B, 256, 6, 6]",0,0,-
+28,features.block4.conv_layers.conv2,Conv2d,"[B, 256, 6, 6]","[B, 256, 6, 6]",589824,589824,"in=256, out=256, k=(3, 3), s=(1, 1), p=(1, 1), bias=False"
+29,features.block4.conv_layers.bn2,BatchNorm2d,"[B, 256, 6, 6]","[B, 256, 6, 6]",512,512,num_features=256
+30,features.block4.conv_layers.act2,ReLU,"[B, 256, 6, 6]","[B, 256, 6, 6]",0,0,-
+31,features.block4.pool,MaxPool2d,"[B, 256, 6, 6]","[B, 256, 3, 3]",0,0,"k=2, s=2"
+32,features.block4.dropout,Dropout2d,"[B, 256, 3, 3]","[B, 256, 3, 3]",0,0,p=0.25
+33,classifier.flatten,Flatten,"[B, 256, 3, 3]","[B, 2304]",0,0,start_dim=1
+34,classifier.fc1,Linear,"[B, 2304]","[B, 512]",1180160,1180160,"in=2304, out=512, bias=True"
+35,classifier.act1,ReLU,"[B, 512]","[B, 512]",0,0,-
+36,classifier.dropout,Dropout,"[B, 512]","[B, 512]",0,0,p=0.5
+37,classifier.fc_out,Linear,"[B, 512]","[B, 7]",3591,3591,"in=512, out=7, bias=True"
