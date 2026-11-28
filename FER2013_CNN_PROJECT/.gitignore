@@ -1,18 +1,65 @@
-# Python & OS
+# .gitignore – FER2013 CNN Project
+
+# ---- Dataset lớn ----
+data/raw/
+data/processed/
+*.csv.gz
+*.zip
+*.tar.gz
+
+# ---- Checkpoints & weights (lưu ngoài repo) ----
+checkpoints/*.pth
+checkpoints/*.pt
+# Ngoại lệ: giữ best_config.json
+!checkpoints/best_config.json
+!checkpoints/.gitkeep
+
+# ---- Python cache ----
 __pycache__/
 *.py[cod]
-.DS_Store
-.venv/
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ---- Virtual environment ----
 venv/
+env/
+.venv/
+.env/
+
+# ---- Jupyter ----
 .ipynb_checkpoints/
+*.ipynb
 
-# Dataset nặng (giữ lại .gitkeep và README_data.md)
-data/raw/FER2013/*.csv
-data/raw/FER2013/*.tar*
-data/raw/FER2013/*.zip
-data/processed/*
-!data/processed/.gitkeep
+# ---- Logs & experiment outputs (lớn) ----
+experiments/*/
+!experiments/.gitkeep
+!experiments/experiment_log.csv
+!experiments/experiment_summary.csv
 
-# File nén / log tạm
-*.zip
-*.log
+# ---- Kết quả ảnh tạm ----
+#results/**/*.png
+#results/**/*.jpg
+#!results/.gitkeep
+
+# ---- IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- API keys, secrets ----
+.env
+*.key
+secrets.json
+
+# ---- Build ----
+dist/
+build/
+*.egg-info/
