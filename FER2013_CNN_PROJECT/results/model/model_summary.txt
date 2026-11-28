@@ -1,0 +1,54 @@
+====================================================================================================================
+MODEL SUMMARY: FER2013CNN (v1.0)
+Input shape : [B, 1, 48, 48] (float32, normalized)
+Output shape: [B, 7] (raw logits, NO Softmax)
+Last Conv2d : features.block4.conv_layers.conv2 -> weight shape (256, 256, 3, 3)
+====================================================================================================================
+Layer Name                     Type           Input Shape        Output Shape            Param #  Details
+--------------------------------------------------------------------------------------------------------------------
+features.block1.conv_layers.conv1 Conv2d         [B, 1, 48, 48]     [B, 32, 48, 48]             288  in=1, out=32, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block1.conv_layers.bn1 BatchNorm2d    [B, 32, 48, 48]    [B, 32, 48, 48]              64  num_features=32
+features.block1.conv_layers.act1 ReLU           [B, 32, 48, 48]    [B, 32, 48, 48]               0  -
+features.block1.conv_layers.conv2 Conv2d         [B, 32, 48, 48]    [B, 32, 48, 48]           9,216  in=32, out=32, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block1.conv_layers.bn2 BatchNorm2d    [B, 32, 48, 48]    [B, 32, 48, 48]              64  num_features=32
+features.block1.conv_layers.act2 ReLU           [B, 32, 48, 48]    [B, 32, 48, 48]               0  -
+features.block1.pool           MaxPool2d      [B, 32, 48, 48]    [B, 32, 24, 24]               0  k=2, s=2
+features.block1.dropout        Dropout2d      [B, 32, 24, 24]    [B, 32, 24, 24]               0  p=0.25
+features.block2.conv_layers.conv1 Conv2d         [B, 32, 24, 24]    [B, 64, 24, 24]          18,432  in=32, out=64, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block2.conv_layers.bn1 BatchNorm2d    [B, 64, 24, 24]    [B, 64, 24, 24]             128  num_features=64
+features.block2.conv_layers.act1 ReLU           [B, 64, 24, 24]    [B, 64, 24, 24]               0  -
+features.block2.conv_layers.conv2 Conv2d         [B, 64, 24, 24]    [B, 64, 24, 24]          36,864  in=64, out=64, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block2.conv_layers.bn2 BatchNorm2d    [B, 64, 24, 24]    [B, 64, 24, 24]             128  num_features=64
+features.block2.conv_layers.act2 ReLU           [B, 64, 24, 24]    [B, 64, 24, 24]               0  -
+features.block2.pool           MaxPool2d      [B, 64, 24, 24]    [B, 64, 12, 12]               0  k=2, s=2
+features.block2.dropout        Dropout2d      [B, 64, 12, 12]    [B, 64, 12, 12]               0  p=0.25
+features.block3.conv_layers.conv1 Conv2d         [B, 64, 12, 12]    [B, 128, 12, 12]         73,728  in=64, out=128, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block3.conv_layers.bn1 BatchNorm2d    [B, 128, 12, 12]   [B, 128, 12, 12]            256  num_features=128
+features.block3.conv_layers.act1 ReLU           [B, 128, 12, 12]   [B, 128, 12, 12]              0  -
+features.block3.conv_layers.conv2 Conv2d         [B, 128, 12, 12]   [B, 128, 12, 12]        147,456  in=128, out=128, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block3.conv_layers.bn2 BatchNorm2d    [B, 128, 12, 12]   [B, 128, 12, 12]            256  num_features=128
+features.block3.conv_layers.act2 ReLU           [B, 128, 12, 12]   [B, 128, 12, 12]              0  -
+features.block3.pool           MaxPool2d      [B, 128, 12, 12]   [B, 128, 6, 6]                0  k=2, s=2
+features.block3.dropout        Dropout2d      [B, 128, 6, 6]     [B, 128, 6, 6]                0  p=0.25
+features.block4.conv_layers.conv1 Conv2d         [B, 128, 6, 6]     [B, 256, 6, 6]          294,912  in=128, out=256, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block4.conv_layers.bn1 BatchNorm2d    [B, 256, 6, 6]     [B, 256, 6, 6]              512  num_features=256
+features.block4.conv_layers.act1 ReLU           [B, 256, 6, 6]     [B, 256, 6, 6]                0  -
+features.block4.conv_layers.conv2 Conv2d         [B, 256, 6, 6]     [B, 256, 6, 6]          589,824  in=256, out=256, k=(3, 3), s=(1, 1), p=(1, 1), bias=False
+features.block4.conv_layers.bn2 BatchNorm2d    [B, 256, 6, 6]     [B, 256, 6, 6]              512  num_features=256
+features.block4.conv_layers.act2 ReLU           [B, 256, 6, 6]     [B, 256, 6, 6]                0  -
+features.block4.pool           MaxPool2d      [B, 256, 6, 6]     [B, 256, 3, 3]                0  k=2, s=2
+features.block4.dropout        Dropout2d      [B, 256, 3, 3]     [B, 256, 3, 3]                0  p=0.25
+classifier.flatten             Flatten        [B, 256, 3, 3]     [B, 2304]                     0  start_dim=1
+classifier.fc1                 Linear         [B, 2304]          [B, 512]              1,180,160  in=2304, out=512, bias=True
+classifier.act1                ReLU           [B, 512]           [B, 512]                      0  -
+classifier.dropout             Dropout        [B, 512]           [B, 512]                      0  p=0.5
+classifier.fc_out              Linear         [B, 512]           [B, 7]                    3,591  in=512, out=7, bias=True
+====================================================================================================================
+Feature Extractor params :    1,172,640 (49.76%)
+Classifier (FC) params   :    1,183,751 (50.24%)
+--------------------------------------------------------------------------------------------------------------------
+Total params             :    2,356,391
+Trainable params         :    2,356,391
+Non-trainable params     :            0
+Estimated weights (FP32) :        8.99 MB
+====================================================================================================================

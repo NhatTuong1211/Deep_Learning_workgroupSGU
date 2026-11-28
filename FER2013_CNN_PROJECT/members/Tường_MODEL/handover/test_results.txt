@@ -1,0 +1,27 @@
+test_checkpoint_save_load_compatibility (__main__.TestFER2013CNN.test_checkpoint_save_load_compatibility)
+Kiểm tra lưu/nạp checkpoint (state_dict + config). ... ok
+test_config_variants_and_json_roundtrip (__main__.TestFER2013CNN.test_config_variants_and_json_roundtrip)
+Kiểm tra cấu hình linh hoạt cho thực nghiệm (dropout, activation, JSON). ... ok
+test_forward_loss_backward_and_gradients (__main__.TestFER2013CNN.test_forward_loss_backward_and_gradients)
+Kiểm tra CrossEntropyLoss, backward và gradient trên mọi tham số. ... ok
+test_invalid_config_raises (__main__.TestFER2013CNN.test_invalid_config_raises)
+Kiểm tra validation của ModelConfig khi tham số sai. ... ok
+test_last_conv_layer_for_tv4_visualization (__main__.TestFER2013CNN.test_last_conv_layer_for_tv4_visualization)
+Xác nhận có thể trích xuất lớp Conv2d cuối cùng để vẽ filter. ... ok
+test_output_shape_multiple_batch_sizes (__main__.TestFER2013CNN.test_output_shape_multiple_batch_sizes)
+Kiểm tra đầu ra [B, 7] với nhiều batch size ở cả train() và eval(). ... ok
+test_parameter_count_positive_and_consistent (__main__.TestFER2013CNN.test_parameter_count_positive_and_consistent)
+Xác nhận số tham số > 0 và trainable == total. ... ok
+test_raw_logits_no_softmax (__main__.TestFER2013CNN.test_raw_logits_no_softmax)
+Xác nhận mô hình trả logits thô (không gắn Softmax trước CrossEntropyLoss). ... ok
+test_label_mapping_matches_tv1 (__main__.TestTV1TV2Integration.test_label_mapping_matches_tv1)
+Xác nhận số lớp và thứ tự nhãn khớp 100% với TV1 và đề bài. ... skipped 'Chưa có module src.data.label_mapping của TV1 trong repo.'
+test_real_fer2013_batch_forward_backward (__main__.TestTV1TV2Integration.test_real_fer2013_batch_forward_backward)
+Chạy 1 batch ảnh thật từ FER2013 qua FER2013CNN (forward + loss + backward). ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.060s
+
+OK (skipped=1)
+
+[Integration Smoke Test] real FER2013 batch OK (via_tv1_dataloader=False, loss=4.3134)
