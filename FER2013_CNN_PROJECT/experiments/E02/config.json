@@ -1,0 +1,59 @@
+{
+    "experiment_id": "E02",
+    "experiment_stage": "screening",
+    "screening_epochs": 5,
+    "experiment_changes": {
+        "optimizer_name": "SGD",
+        "momentum": 0.9
+    },
+    "training_config": {
+        "csv_path": "C:\\Users\\PHUONG UYEN\\Desktop\\BT Học Sâu\\FER2013_CNN_PROJECT\\data\\fer2013.csv",
+        "batch_size": 64,
+        "num_workers": 0,
+        "use_aug": true,
+        "epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "seed": 42,
+        "loss_name": "CrossEntropyLoss",
+        "optimizer_name": "SGD",
+        "use_scheduler": true,
+        "scheduler_patience": 3,
+        "scheduler_factor": 0.5,
+        "save_best_only": true,
+        "best_model_path": "C:\\Users\\PHUONG UYEN\\Desktop\\BT Học Sâu\\FER2013_CNN_PROJECT\\experiments\\E02\\checkpoints\\best_model.pth",
+        "device": "cpu",
+        "momentum": 0.9
+    },
+    "model_config": {
+        "model_name": "FER2013CNN",
+        "model_version": "v1.0",
+        "in_channels": 1,
+        "input_size": [
+            48,
+            48
+        ],
+        "num_classes": 7,
+        "conv_channels": [
+            32,
+            64,
+            128,
+            256
+        ],
+        "convs_per_block": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "kernel_size": 3,
+        "stride": 1,
+        "padding": 1,
+        "pool_size": 2,
+        "use_batchnorm": true,
+        "activation": "relu",
+        "dropout_conv": 0.25,
+        "dropout_fc": 0.5,
+        "fc_hidden_dim": 512
+    }
+}
